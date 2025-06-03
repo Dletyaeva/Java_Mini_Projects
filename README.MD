@@ -13,7 +13,9 @@
 3. Open the project repo in VS Code
 4. in the folder "Lesson1" create another folder with your name and copy all three mini-projects into your folder - they are already configure
 5. Instructions on what to do next are in the code comments and README files for each mini-project
+6. Once you are done with all 3 Challenges - merge your branch and delete it
    
 # Resources
-* https://code.visualstudio.com/docs/java/java-tutorial
-* 
+* [Getting Started in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
+* [Merging in Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
+* [Making and Deleting Branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository)
