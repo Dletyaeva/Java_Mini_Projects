@@ -1,5 +1,10 @@
 # Instructions
 1. From this main brach, create a Branch with your name
+   1. Click on `Branch`
+   2. Click on green button `New Branch`
+   3. Set branch name to your name 
+   4. Click `Create new Branch`
+   5. Click on your name
 2. create a local clone of that branch
    1. after creating a branch if you check the left corner under "Java_Mini_Projects" instead of `main` it should have `yourname`
    2. if that is true, click on the green `code` button
