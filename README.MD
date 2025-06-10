@@ -43,6 +43,7 @@ Lesson1/
    * Then click on **Changes** >> **Stage All Changes**
    * **Alteratively** you can hover over the other `Changes` tab and find a plus sign-hovering over the plus sign should say `Stage Changes`-**Click on the plus sign**
    * Then in the area where it says `Message` type `finished projectName`
+   * Then press blue `Commit` button
 
 ## Step 5: Submit Your Work / Merge Your Branch
   1. When you've finished all three projects:
