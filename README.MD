@@ -39,11 +39,11 @@ Lesson1/
   2. You’ll be editing the code **inside your folder only.**
   3. MAKE SURE TO SAVE YOUR WORK BEFORE SUBMITTING!
   4. After you complete each project `commit` the changes to your local repo by:
-    * Press `Ctrl + Shift + G`
-    * Hover over the tab with the bold and all caps `CHANGES` and find three dots - hovering over those three dots should say `More Actions...` - **Click on the three dots**
-    * Then click on **Changes** >> **Stage All Changes**
-    * **Alteratively** you can hover over the other `Changes` tab and find a plus sign-hovering over the plus sign should say `Stage Changes`-**Click on the plus sign**
-    * Then in the area where it says `Message` type `finished projectName`
+  * Press `Ctrl + Shift + G`
+  * Hover over the tab with the bold and all caps `CHANGES` and find three dots - hovering over those three dots should say `More Actions...` - **Click on the three dots**
+  * Then click on **Changes** >> **Stage All Changes**
+  * **Alteratively** you can hover over the other `Changes` tab and find a plus sign-hovering over the plus sign should say `Stage Changes`-**Click on the plus sign**
+  * Then in the area where it says `Message` type `finished projectName`
 
 ## Step 5: Submit Your Work / Merge Your Branch
   1. When you've finished all three projects:
@@ -52,7 +52,7 @@ Lesson1/
     *  Then find and click on the green button that says `Merge`
     *  If merge is successful - a purple button will appear with `Delete Your Branch` - click on it
 
-#💡Final Notes
+# 💡Final Notes
 * Ask if you're stuck! Github can be tricky at first.
 * Be careful not to edit the original three folders - work inside your copy
    
