@@ -43,14 +43,18 @@ Lesson1/
    * Then click on **Changes** >> **Stage All Changes**
    * **Alteratively** you can hover over the other `Changes` tab and find a plus sign-hovering over the plus sign should say `Stage Changes`-**Click on the plus sign**
    * Then in the area where it says `Message` type `finished projectName`
-   * Then press blue `Commit` button
+   * Then Click on blue `Commit` button
+   * Then Click on `Sync Changes`
+   * Click `Ok` on the pop-up message
 
 ## Step 5: Submit Your Work / Merge Your Branch
   1. When you've finished all three projects:
    * Open `Github Desktop`
-   * Click on the blue button arrow then `Create Pull Request`
-   * Then find and click on the green button that says `Merge`
-   * If merge is successful - a purple button will appear with `Delete Your Branch` - click on it
+   * Click on `Create Pull Request`
+   * Then click `View on Github` to open your repo in browser
+   * On Github, click `Compare & Pull Request` button
+   * On the next screen, click ``
+   * If successful, click the purple `Delete branch` button
 
 # 💡Final Notes
 * Ask if you're stuck! Github can be tricky at first.
