@@ -15,7 +15,7 @@ In this repo (branch `main`):
   2. On the top click on `Fetch Origin`
   3. Then click on `Current Branch`
   4. You should see your name on the list - click on it
-  5. Then still in github desktop click on `Open in VS Studio Code`
+  5. Then still in github desktop click on `Open in VS Code`
 ## Step 3: Create Your Project Folder
   1. Inside `Lesson1` folder create a **new folder with your first name** 
   2. **Copy** all 3 folders into your folder.
@@ -55,6 +55,13 @@ Lesson1/
 # 💡Final Notes
 * Ask if you're stuck! Github can be tricky at first.
 * Be careful not to edit the original three folders - work inside your copy
+
+# Quick Terms
+* `Repo` = Short for repository, like a folder that holds your code projects.
+* `Clone` = Make a copy of the repo on your computer.
+* `Branch` = A separate version of the code you can work on without changing the original.
+* `Commit` = Save your changes to GitHub.
+* `Merge` = Combine your work back into the main project.
    
 # Resources
 * [Getting Started in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
