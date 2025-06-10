@@ -22,7 +22,6 @@ In this repo (branch `main`):
   * 1_Plant_a_Tree/Tree
   * 2_Mab_Libs/MadLibs
   * 3_Math_Magic/Magic
-  *You’ll work inside your own copy.*
 **Here is what the folder structure should look like:**
 ```
 Lesson1/
