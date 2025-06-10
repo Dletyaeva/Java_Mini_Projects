@@ -19,9 +19,9 @@ In this repo (branch `main`):
 ## Step 3: Create Your Project Folder
   1. Inside `Lesson1` folder create a **new folder with your first name** 
   2. **Copy** all 3 folders into your folder.
-    * 1_Plant_a_Tree/Tree
-    * 2_Mab_Libs/MadLibs
-    * 3_Math_Magic/Magic
+  * 1_Plant_a_Tree/Tree
+  * 2_Mab_Libs/MadLibs
+  * 3_Math_Magic/Magic
   *You’ll work inside your own copy.*
 **Here is what the folder structure should look like:**
 ```
