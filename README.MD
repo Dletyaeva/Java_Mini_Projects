@@ -21,7 +21,7 @@ In this repo (branch `main`):
   2. **Copy** all 3 folders into your folder.
   * 1_Plant_a_Tree/Tree
   * 2_Mab_Libs/MadLibs
-  * 3_Math_Magic/Magic
+  * 3_Math_Magic/Magic <br>
 **Here is what the folder structure should look like:**
 ```
 Lesson1/
