@@ -1,18 +1,19 @@
 import java.util.Scanner;
 //The class name doesn't really fit to what we are doing - what is a better name?
-class Demo_1 {
+class Student {
     // instance variables
-    String name;
+    String name; //show what happens fi these are set to private instead of public ➡️ ties back to why we use setters/getters
     int age;
 
     // this constructor takes the information put into the created object and sets
     // the approriate instance variables to it
-    public Demo_1(String name, int age) {
+    // This constructor assigns the given values to the instance variables
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    // I can reset the age from the one originally provided with a setter method
+    // This setter lets me change the age after the object is created
     // setter for age
     public void setAge(int age) {
         this.age = age;
@@ -36,56 +37,55 @@ class Demo_1 {
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // create an object
-        // this objects accepts 2 parameters a "name" and "age"
-        Demo_1 student1 = new Demo_1(args[0], Integer.parseInt(args[1]));
-        
-        //TODO: Lets add another instance of the class!
+        //create a scanner object
+        Scanner scanner = new Scanner(System.in);
 
+        // create a Student object
+        // this objects accepts 2 parameters a "name" and "age"
+        Student student1 = new Student(args[0], Integer.parseInt(args[1]));
+        
+        //TODO: Lets create another Student object with different values!
+
+        // can directly call the instance variables
         System.out.println("Current student is: " + student1.name + "\nAge: " + student1.age);
 
-        // Other Goofy things
-        Scanner scanner = new Scanner(System.in);
         int exit = 0;
-        while(exit == 0){
+        while (exit == 0) {
             System.out.print("Are there any errors? Y/N: ");
             String userResponse = scanner.next();
-            System.out.print("\n");
 
-            while ((!userResponse.equals("Y")) && (!userResponse.equals("N"))) {
-                System.out.print("Incorrect input type either 'Y' / 'N' : ");
+            while (!userResponse.equals("Y") && !userResponse.equals("N")) {
+                System.out.print("Please type 'Y' or 'N': ");
                 userResponse = scanner.next();
-
             }
-            
+
             if (userResponse.equals("Y")) {
                 System.out.print("Pick error type: [N] for name ; [A] for age: ");
                 String userResponse2 = scanner.next();
 
-                while((!userResponse2.equals("N")) && (!userResponse2.equals("A"))) {
-                    System.out.print("Incorrect input type either 'N' / 'A': ");
+                while (!userResponse2.equals("N") && !userResponse2.equals("A")) {
+                    System.out.print("Please type 'N' or 'A': ");
                     userResponse2 = scanner.next();
+                }
 
-                } 
-                
                 if (userResponse2.equals("A")) {
-                    System.out.print("Type new age: ");
+                    System.out.print("Enter new age: ");
                     int newAge = scanner.nextInt();
                     student1.setAge(newAge);
-                    System.out.print("\n");
-
                 } else {
-                    System.out.println("Type new name: ");
-                    userResponse2 = scanner.next();
-                    student1.setName(userResponse2);
-                    System.out.print("\n");
+                    System.out.print("Enter new name: ");
+                    String newName = scanner.next();
+                    student1.setName(newName);
                 }
             }
+
             System.out.println("Exit? [1] yes; [0] no");
             exit = scanner.nextInt();
         }
+
         scanner.close();
-        System.out.println("Current Student Name: " + student1.getName() + "\nCurrent Student Age: " + student1.getAge());
-        System.out.println("Good bye!");
+        //using getter method to access the instance variables
+        System.out.println("Final Student Info:\nName: " + student1.getName() + "\nAge: " + student1.getAge());
+        System.out.println("Goodbye!");
     }
 }

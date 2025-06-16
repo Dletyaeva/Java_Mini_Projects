@@ -6,10 +6,12 @@
 
 /*
  * STEP 1: Create a `public` class called `Calculator`
+ *         - inside the class create 2 instance variables
  * 
  * STEP 2: Inside the class, define a constructor that:
- *         - takes 2 integer parameters
- *         - stores them in instance variables
+ *         - takes 2 integer parameters (e.g "int num1, int num2")
+ *         - Assign each parameter to the correct instance variable using `this`
+ *         - Example: `this.num1 = num1;`
  * 
  * STEP 2.B: Inside the class, define two `setter` methods and two `getter` methods:
  *         - Each **setter** method takes ONE parameter and sets the value of an instance variable
