@@ -5,33 +5,41 @@
  */
 
 /*
- * STEP 1: Create a `public` class called `Calculator`
- *         - inside the class create 2 instance variables
+ * STEP 1: Create a class called `Calculator` (Don't declare it public bc it will clash with the public main class)
  * 
- * STEP 2: Inside the class, define a constructor that:
+ * STEP 2: Inside the class create 4 instance variables
+ *         - Two instance variables to store integer values 
+ *         - Two instance variables to store decimal (double) values
+ * 
+ * STEP 3.A: Inside the class, define a constructor that:
  *         - takes 2 integer parameters (e.g "int num1, int num2")
  *         - Assign each parameter to the correct instance variable using `this`
  *         - Example: `this.num1 = num1;`
  * 
- * STEP 2.B: Inside the class, define two `setter` methods and two `getter` methods:
- *         - Each **setter** method takes ONE parameter and sets the value of an instance variable
- *         - Each **getter** method returns the value of the corresponding instance variable
+ * STEP 3.B: Add a second constructor that takes two double parameters.
+ *         - Assign the values to the correct double instance variables using `this`
+ * 
+ * STEP 3.C: Add a no-argument constructor that sets all instance variables (int and double) to 0.
+ * 
+ * STEP 4: Inside the class, define 4 `setter` methods and 4 `getter` methods:
+ *           - Two for the integer variables (e.g., setNum1, getNum1)
+ *           - Two for the double variables (e.g., setDNum1, getDNum1)
  *
  *         For example:
- *             - `setNum1(int value)` sets the first value
+ *             - `setNum1(int value1)` sets the first value
  *             - `getNum1()` returns the first value
  *             - Repeat for the second value
  *
  *         These methods will help you update the Calculator object with user input
  *
- * STEP 3: Inside the Calculator class, create public methods for:
+ * STEP 5: Inside the Calculator class, create public methods for:
  *         - `add()` → returns the sum of the two instance variables with return type "int"
  *         - `subtract()` → returns the difference with return type "int"
  *         - `multiply()` → returns the product with return type "int"
  *         - `divide()` → returns the quotient (use integer division) with return type "int"
  *         - `modulo()` → returns the remainder with return type "int"
  *
- * STEP 4: For each of the above methods, create an overloaded version that:
+ * STEP 6: For each of the above methods, create an overloaded version that:
  *         - takes two `double` parameters
  *         - returns a `double` result
  *
@@ -39,11 +47,11 @@
  *             int add(int a, int b)           → uses int parameters
  *             double add(double a, double b)  → uses double parameters
  *
- * STEP 5: In each method, add a temporary print statement:
+ * STEP 7: In each method, add a temporary print statement:
  *         System.out.println("int version called");     // in int method
  *         System.out.println("double version called");  // in double method
  *
- * STEP 6: Test all versions of your Calculator methods using specific values.
+ * STEP 8: Test all versions of your Calculator methods using specific values.
  *         You have two options:
  *
  *         Option A: Create a separate `test()` method inside your Main class
@@ -67,7 +75,6 @@
  *         - Be ready to explain what happened next time!
  */
 
-
 /*
  * HINTS:
  * - The Calculator class should NOT be defined inside the Main class
@@ -83,22 +90,24 @@
  * - Your main method must interact with the user through the terminal
  * - You must test each operation with both `int` and `double` values
  * - All methods should use the Calculator's instance variables for input
+ *      - i.e set the class instance variables with user input
  */
 
 
 
 public class Main {
-    /*
-     * 1. Define the `main` method
-     * 2. Greet the user
-     * 3. Prompt the user to choose a calculator operation
+    //1. Define the `main` method
+     /* 2. Create your objects (scanner, calculator, etc)
+     *      - HINT: for calculator object use default no-args constructor
+     * 3. create and call a test function
+     *      - Calling all the methods directly with mixed values
+     *      - print all the results
+     *      - HINT: all Helper functions are defined below the `main` function
+     * 4. Greet the user
+     * 5. Prompt the user to choose a calculator operation
      *      - Options: add, subtract, multiply, divide, modulo
-     * 4. Ask the user to enter 2 values
-     *      - You may start with integers, then test doubles
-     * 5. Create an instance of Calculator using the integer constructor
+     * 6. Ask the user to enter 2 values
      * 6. Call the appropriate method based on the user’s choice
      * 7. Print the result
-     *
-     * Extra: Try calling the double methods directly from main with mixed values
      */
 }
