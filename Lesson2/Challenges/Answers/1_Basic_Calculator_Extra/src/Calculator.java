@@ -1,7 +1,7 @@
 
 /*
  * STEP 1: Create a `public` class called `Calculator`
- *         - inside the class create 2 instance variables
+ *         - inside the class create 4 instance variables
  */
 public class Calculator{
     private int int_var1;

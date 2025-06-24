@@ -1,7 +1,8 @@
 /*
  * Author: Daleela
  * Date: 06/23/2025
- * Description:
+ * Description: A Simple calculator that first tests all the opertaions with hardcoded valuesa and prints the outputs. Then takes one user operation and prints the output.
+ * List of operations: addition, subtraction, division, multiplication, modulo
  */
 
 import java.util.Scanner;
