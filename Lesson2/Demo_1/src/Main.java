@@ -1,8 +1,8 @@
 import java.util.Scanner;
-//The class name doesn't really fit to what we are doing - what is a better name?
+
 class Student {
     // instance variables
-    String name; //show what happens fi these are set to private instead of public ➡️ ties back to why we use setters/getters
+    String name; //show what happens fi these are set to private instead of public --> ies back to why we use setters/getters
     int age;
 
     // this constructor takes the information put into the created object and sets

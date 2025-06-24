@@ -1,0 +1,100 @@
+Testing Addition with 2 Integers
+Inputs: 2, 4
+int version called
+Result:6
+
+Testing Addition with 2 Decimals
+Inputs: 6.5, 2.3
+double version called
+Result:8.8
+
+Testing Addition with Mix Inputs v.1
+Inputs: 2, 2.3
+double version called
+Result:4.3
+
+Testing Addition with Mix Inputs v.2
+Inputs: 6.5, 4
+double version called
+Result:10.5
+
+Testing Subtraction with 2 Integers
+Inputs: 2, 4
+int version called
+Result:-2
+
+Testing Subtration with 2 Decimals
+Inputs: 6.5, 2.3
+double version called
+Result:4.2
+
+Testing Subtration with Mix Inputs v.1
+Inputs: 2, 2.3
+double version called
+Result:-0.2999999999999998
+
+Testing Subtration with Mix Inputs v.2
+Inputs: 6.5, 4
+double version called
+Result:2.5
+
+Testing Multiplication with 2 Integers
+Inputs: 2, 4
+int version called
+Result:8
+
+Testing Multiplication with 2 Decimals
+Inputs: 6.5, 2.3
+double version called
+Result:14.95
+
+Testing Multiplication with Mix Inputs v.1
+Inputs: 2, 2.3
+double version called
+Result:4.6
+
+Testing Multiplication with Mix Inputs v.2
+Inputs: 6.5, 4
+double version called
+Result:26.0
+
+Testing Division with 2 Integers
+Inputs: 2, 4
+int version called
+Result:0
+
+Testing Division with 2 Decimals
+Inputs: 6.5, 2.3
+double version called
+Result:2.8260869565217392
+
+Testing Division with Mix Inputs v.1
+Inputs: 2, 2.3
+double version called
+Result:0.8695652173913044
+
+Testing Division with Mix Inputs v.2
+Inputs: 6.5, 4
+double version called
+Result:1.625
+
+Testing Modulo with 2 Integers
+Inputs: 2, 4
+int version called
+Result:2
+
+Testing Modulo with 2 Decimals
+Inputs: 6.5, 2.3
+double version called
+Result:1.9000000000000004
+
+Testing Modulo with Mix Inputs v.1
+Inputs: 2, 2.3
+double version called
+Result:2.0
+
+Testing Modulo with Mix Inputs v.2
+Inputs: 6.5, 4
+double version called
+Result:2.5
+
