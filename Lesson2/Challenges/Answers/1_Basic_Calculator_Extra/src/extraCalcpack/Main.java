@@ -1,18 +1,18 @@
-/*
- * Author: Daleela Letyaeva
- * Date: 6/23/2025
- * Description: "Extra" version of the original challenge. A basic calculator that takes an entire operation input string (2 numbers and an operator) and produces a result.
- */
-
+package extraCalcpack;
 import java.util.Scanner;
 import java.io.*;
 
 public class Main {
     // NOTE: Instead of hardcoding the path everywhere, we define it once as a
     // constant
-    private static final String PATH = "C:/Users/letya/Github/Github/pius_summer_2025/Java_Mini_Projects/Lesson2/Challenges/Answers/1_Basic_Calculator_Extra/output/Output.txt";
+    private static final String PATH = "C:/Users/letya/Github/Github/pius_summer_2025/Java_Mini_Projects/Lesson2/Challenges/Answers/1_Basic_Calculator_Extra/src/bin/testOutput.txt";
 
     public static void main(String[] args) {
+        //check that all arguments are given
+        if(args.length < 3){
+            System.out.println("Please enter: Integer, Integer, Double, Double");
+        }
+
         Scanner scanner = new Scanner(System.in);
 
         // NOTE: Save original System.out so we can restore it after printing to file
@@ -38,7 +38,7 @@ public class Main {
         } finally {
             System.setOut(og); // Restore normal console output
         }
-
+        
         // Begin interactive calculator session
         runCalculator(scanner);
         scanner.close();

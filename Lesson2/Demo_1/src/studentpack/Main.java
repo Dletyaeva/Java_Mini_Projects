@@ -1,3 +1,4 @@
+package studentpack;
 import java.util.Scanner;
 
 class Student {

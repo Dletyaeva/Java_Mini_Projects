@@ -1,12 +1,4 @@
-/*
- * Author: Daleela Letyaeva
- * Date: 06/24/2025
- * Program Description:
- * REFERECES: 
- * https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
- * https://www.codecademy.com/learn/learn-java/modules/learn-java-variables/cheatsheet#:~:text=Copy%20to%20clipboard-,Compound%20Assignment%20Operators,-Compound%20assignment%20operators
- *
- */
+package droidpack;
 
 //STEP 1: Define a class called `Droid` with the following:
 /*
@@ -18,8 +10,6 @@
  * - `energyReport()` → prints the current battery level
  * - `toString()` → returns a string introducing the droid by name
  */
-
-
 class Droid {
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
@@ -55,7 +45,7 @@ class Droid {
      * - Return a string that says: "Hello, I’m the droid [name]!"
      */
     String introName() {
-        return "Hello, I'm the droid " + CYAN + this.name + RESET +"!";
+        return "Hello, I'm the droid " + CYAN + this.name + RESET + "!";
     }
 
     /*
@@ -72,48 +62,26 @@ class Droid {
      * STEP 5: Implement `energyReport()` method (return type: void)
      * - Print the current battery level of the droid
      */
-    void energyReport(){
+    void energyReport() {
         System.out.println(CYAN + this.name + RESET + " Battery Level: " + RED + this.batteryLevel + RESET);
     }
-     /* STEP 6: Implement `energyTransfer(Droid other)` method
+
+    /*
+     * STEP 6: Implement `energyTransfer(Droid other)` method
      * - This method allows one droid to transfer 10 energy to another droid
      * - Print what is happening
      *
      * HINT: No static variables needed — use object references directly!
      */
-    void energyTransfer(Droid other){
-        System.out.println("Battery Level of Doner Droid [" + CYAN + this.name + RESET + "]: " + RED + this.batteryLevel + RESET);
-        System.out.println("Battery Level of Target Droid [" + CYAN + other.name + RESET + "]: " + RED + other.batteryLevel + RESET);
+    void energyTransfer(Droid other) {
+        System.out.println(
+                "Battery Level of Doner Droid [" + CYAN + this.name + RESET + "]: " + RED + this.batteryLevel + RESET);
+        System.out.println("Battery Level of Target Droid [" + CYAN + other.name + RESET + "]: " + RED
+                + other.batteryLevel + RESET);
         this.batteryLevel -= 10;
         other.batteryLevel += 10;
-        System.out.println("Energy transfer from [" + CYAN + this.name + RESET +  "] to [" + CYAN + other.name + RESET + "]: " + GREEN + "Complete" + RESET);
-    }
-    
-    }
-
-public class Main {
-    // TODO: Define main method
-    public static void main(String[] args) {
-        //STEP 1: Create a new Droid object named "Codey"
-        Droid droid = new Droid("Codey");
-        //STEP 2: Print the object to the terminal (this should call `toString()`)
-        System.out.println(droid.introName());
-        //STEP 3: Call performTask() a few times
-        droid.performTask("Surveying");
-        droid.performTask("Tracking");
-        droid.performTask("Following");
-        //STEP 4: Call energyReport()
-        droid.energyReport();
-        //STEP 5: Create another Droid (e.g., "Zippy")
-        Droid droid2 = new Droid("Madascar");
-        System.out.println(droid2.introName());
-        droid2.performTask("Following " + droid.name);
-        droid2.performTask("Continueing to follow " + droid.name);
-        //STEP 6: Transfer energy from one droid to another using energyTransfer()
-        droid.energyTransfer(droid2);
-        //STEP 7: Print both droids' energy reports
-        droid.energyReport();
-        droid2.energyReport();
+        System.out.println("Energy transfer from [" + CYAN + this.name + RESET + "] to [" + CYAN + other.name + RESET
+                + "]: " + GREEN + "Complete" + RESET);
     }
 
 }
