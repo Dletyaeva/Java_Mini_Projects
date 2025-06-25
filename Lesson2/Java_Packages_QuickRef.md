@@ -1,6 +1,6 @@
 # 📦 Java Package Quick Reference
 
-This guide covers the basics of compiling, running, and understanding Java packages — especially helpful if you're coming from C/C++/C#.
+This guide covers the basics of compiling, running, and understanding Java packages
 
 ---
 
