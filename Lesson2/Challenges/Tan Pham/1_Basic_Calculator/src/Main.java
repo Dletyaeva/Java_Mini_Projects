@@ -311,8 +311,9 @@
          System.out.println("In Double Mode");
      } else {System.out.println("In int Mode");}
      int j = 0;
+     input.nextLine();
      while(j == 0){
-     System.out.println("Options:\nMode\nSet Numbers\nGet Numbers\nAdd\nSubtract\nMultiply\nDivide\nModulo\nDemo\nDone");
+     System.out.println("\nOptions:\nMode\nSet Numbers\nGet Numbers\nAdd\nSubtract\nMultiply\nDivide\nModulo\nDemo\nDone\n");
      String task = input.nextLine();
      switch(task){
      case "Mode":
