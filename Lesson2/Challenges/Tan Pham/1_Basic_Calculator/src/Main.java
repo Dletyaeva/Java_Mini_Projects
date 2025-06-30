@@ -289,6 +289,7 @@
      Scanner input = new Scanner(System.in);
      Number choice1 = null;
      Number choice2 = null;
+     System.out.println("Hello World, This is my Calculator.\nBelow please enter the two numbers you would like to use(this can be changed).\nAfter Please select an option by typing in the exact name of that option");
      System.out.println("First Number?");
      if (input.hasNextInt()) {
           choice1 = input.nextInt();
