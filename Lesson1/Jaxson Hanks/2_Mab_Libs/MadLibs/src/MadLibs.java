@@ -14,26 +14,26 @@
 
 public class MadLibs {
     /*
-    This is a mad lib, it prints out a story with blanks filled in by variables
-    My name is Tan Pham
-    6/10/25
+    This is a program that prints out the mad lib that I wrote by putting in random words that fit the category
+    Jaxson Hanks 6/27/25
      */
+    
     public static void main(String[] args){
+    String name1 = "jeff";
+    String name2 = "chris";
+    String adjective1 = "loud";
+    String adjective2 = "deadly";
+    String adjective3 = "frightful";
+    String verb1 = "defenstrate";
+    Integer number = 9;
+    String noun1 = "computer";
+    String noun2 = "competitor";
+    String noun3 = "Nintendo Switch";
+    String noun4 = "Rubiks cube";
+    String noun5 = "pyraminx";
+    String noun6 = "backpack";
+    String place1 = "Luigi's Mansion";
         //The template for the story
-        String name1 = "Jack";
-        String adjective1 = "Radiant";
-        String adjective2 = "Golden";
-        String noun1 = "Donut";
-        String noun2 = "Chicken";
-        String verb1 = "diving";
-        String noun3 = "fish";
-        String noun4 = "McFrappe";
-        String adjective3 = "Majestic";
-        String name2 = "Jill";
-        String place1 = "Krispy Kreme";
-        String noun5 = "pianos";
-        int number = 100000000;
-        String noun6 = "starfish";
         String story = 
         "This morning " + name1 + " woke up feeling " + adjective1 + 
         ".'It is going to be a "+ adjective2 + " day!' Outside, a bunch of " + 
