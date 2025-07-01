@@ -1,4 +1,4 @@
-package extraCalcpack;
+package democalcpack;
 public class Calculator{
     private int int_var1;
     private int int_var2;

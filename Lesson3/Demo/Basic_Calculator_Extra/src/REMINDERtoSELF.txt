@@ -1,0 +1,6 @@
+To run any solution or Demo that has a package define with a bin 
+please compile:
+javac -d .\bin\ .\packageName\Main.java
+
+to run:
+java bin\Main

@@ -1,4 +1,4 @@
-package extraCalcpack;
+package democalcpack;
 
 public class Test extends Calculator{
     private int t_int1;
