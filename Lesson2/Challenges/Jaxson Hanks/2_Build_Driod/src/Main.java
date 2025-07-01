@@ -1,11 +1,4 @@
 /*
- * Author:Jaxson Hanks
- * Date:6/28/25
- * Program Description:
- *
- */
-
-/*
  * STEP 1: Define a class called `Droid` with the following:
  *
  *     Instance Variables:

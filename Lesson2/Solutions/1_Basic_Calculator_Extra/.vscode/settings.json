@@ -1,6 +1,6 @@
 {
-    "java.project.sourcePaths": ["src"],
-    "java.project.outputPath": "bin",
+    "java.project.sourcePaths": ["extraCalcpack"],
+    "java.project.outputPath": "bin/extraCalcpack",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ]

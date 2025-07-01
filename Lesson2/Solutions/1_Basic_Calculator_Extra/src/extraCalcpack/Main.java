@@ -5,7 +5,7 @@ import java.io.*;
 public class Main {
     // NOTE: Instead of hardcoding the path everywhere, we define it once as a
     // constant
-    private static final String PATH = "C:/Users/letya/Github/Github/pius_summer_2025/Java_Mini_Projects/Lesson2/Challenges/Answers/1_Basic_Calculator_Extra/src/bin/testOutput.txt";
+    private static final String PATH = "C:/Users/letya/Github/Github/pius_summer_2025/Java_Mini_Projects/Lesson2/Challenges/Solutions/1_Basic_Calculator_Extra/src/bin/testOutput.txt";
 
     public static void main(String[] args) {
         //check that all arguments are given
