@@ -119,3 +119,5 @@ Check out:
 
 ## 📕Extra Resources:
 - 📑[Java Scanner Methods](https://www.w3schools.com/java/java_ref_scanner.asp)
+- 📑[Switch Statement](https://www.w3schools.com/java/java_switch.asp)
+- 📑[Conditionals](https://www.w3schools.com/java/java_conditions.asp)
