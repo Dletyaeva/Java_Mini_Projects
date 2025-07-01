@@ -84,8 +84,8 @@
  * - You must test each operation with both `int` and `double` values
  * - All methods should use the Calculator's instance variables for input
  */
-
-
+//I assume I need this here
+import java.util.Scanner;
 class Calculator{
     int num1;
     int num2;
@@ -170,8 +170,31 @@ class Calculator{
 }
 public class Main {
     public static void main(String[] args) {
-        Calculator test = new Calculator(1,2);
-        
+        Scanner scanner = new Scanner(System.in);
+        int userResponse;
+        int userResponse2;
+        int operation;
+        System.out.println("hello user. what would you like your first number to be?:");
+        userResponse = scanner.nextInt();
+        System.out.println("What would you like your second number to be?");
+        userResponse2 = scanner.nextInt();
+        Calculator calc = new Calculator(userResponse, userResponse2);
+        System.out.println("What operation would you like to do on these numbers?(addition = 1, subtract = 2, multiply = 3, division = 4, modulo = 5):");
+        operation = scanner.nextInt();
+        if(operation == 1){
+            calc.addition(userResponse, userResponse2);
+        }else if(operation == 2){
+            calc.subtract(userResponse, userResponse2);
+        }else if(operation == 3){
+            calc.multiply(userResponse, userResponse2);
+        }else if(operation == 4){
+            calc.division(userResponse, userResponse2);
+        }else if(operation == 5){
+            calc.modulo(userResponse, userResponse2);
+        }else{
+            System.out.println("Sorry, I don't recognize that.");
+        }
+        scanner.close();
     }
     /*
      * 1. Define the `main` method
