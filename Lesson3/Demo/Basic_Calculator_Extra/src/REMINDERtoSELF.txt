@@ -3,4 +3,4 @@ please compile:
 javac -d .\bin\ .\packageName\Main.java
 
 to run:
-java bin\Main
+java -cp bin [packageName].Main [Inputs]
