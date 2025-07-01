@@ -263,6 +263,34 @@
      }
  }
  }
+ public void modeChange(){
+   if(doubleMode == true){
+      this.doubleMode = false;
+      System.out.println("Mode Changed to int mode");
+   } else if(doubleMode == false){
+      this.doubleMode = true;
+      System.out.println("Mode Changed to double mode");}
+   }
+   public void modeOptions(){
+      System.out.println("Mode Options:\nCheck\nSwitch\nBack");
+      String modeChoice = user.nextLine();
+      switch(modeChoice){
+         case "Check":
+         if(this.doubleMode){
+            System.out.println("In Double Mode");
+        } else {System.out.println("In int Mode");}
+        break;
+        case "Switch":
+        modeChange();
+        break;
+        case "Back":
+        break;
+        default:System.out.println("Invalid Returning to Main Menu");
+        break;
+      }
+   }
+   
+ 
  public void test(Calculator x){
      System.out.println("6+5= " + x.add(6, 5));
      System.out.println("3.5+4.5= " + x.add(3.5, 4.5));
@@ -289,6 +317,7 @@
      Scanner input = new Scanner(System.in);
      Number choice1 = null;
      Number choice2 = null;
+     System.out.println("Hello World, This is my Calculator.\nBelow please enter the two numbers you would like to use(this can be changed).\nAfter Please select an option by typing in the exact name of that option");
      System.out.println("First Number?");
      if (input.hasNextInt()) {
           choice1 = input.nextInt();
@@ -317,9 +346,7 @@
      String task = input.nextLine();
      switch(task){
      case "Mode":
-     if(Calc.doubleMode){
-         System.out.println("In Double Mode");
-     } else {System.out.println("In int Mode");}
+     Calc.modeOptions();
      break;
      case "Set Numbers":
          Calc.setNumbers();
@@ -400,4 +427,3 @@
      * 6. Call the appropriate method based on the user’s choice
      * 7. Print the result
      */
-
