@@ -31,53 +31,42 @@
  *
  *     HINT: No static variables needed — use object references directly!
  */
+import java.util.Scanner;
 
-class Droid{
-    int BatteryLevel;
-    String DroidName;
-    String task;
-    //constructor
-        Droid(int BatteryLevel, String DroidName){
-            this.BatteryLevel = BatteryLevel;
-            this.DroidName = DroidName;
-        }
-        void performTask(String task){
-        System.out.println(this.DroidName + " performed " + task);
-        this.BatteryLevel -= 10;
-    }
-    void toString(String DroidName){
-        System.out.println("Hi, I'm the droid called " + DroidName);
-    }
-    int getBatteryLevel(){
-        return this.BatteryLevel;
-    }
-    void energyReport(){
-        System.out.println(this.DroidName + "'s Battery is at " + this.BatteryLevel);
-    }
-    String getName(){
-        return this.DroidName;
-    }
-    void setBatteryLevel(Droid DroidName, int amount){
-        DroidName.BatteryLevel -= amount;
-    }
-    void energyTransfer(Droid Reciever){
-        setBatteryLevel(Reciever , -10);
-        setBatteryLevel(this, 10);
-    }
-}
+
 public class Main {
     // TODO: Define main method
     public static void main(String[] args) {
+        Scanner user = new Scanner(System.in);
+        int c = 0;
         Droid droid1 = new Droid(100, "Codey");
         droid1.toString(droid1.getName());
+        while(c == 0){
         droid1.performTask("make a sandwich");
         droid1.performTask("solve a puzzle");
+        droid1.performTask("do my taxes");
+        droid1.performTask("steal an unsuspecting father's job");
+        droid1.performTask("light off fireworks");
+        droid1.performTask("speedrun Minecraft");
+        droid1.performTask("beat tetris");
+        droid1.performTask("eat a sandwich");
+        droid1.energyReport();
         droid1.performTask("build a droid");
         droid1.energyReport();
-        Droid droid2 = new Droid(100,"Jimbo");
+        System.out.println("What should we name the droid:");
+        Droid droid2 = new Droid(100,user.next());
         droid2.energyTransfer(droid1);
         droid1.energyReport();
         droid2.energyReport();
+        System.out.println("are you done?:");
+        if(user.next().equals("No")){
+            System.out.println("Again!");
+        }else{
+            System.out.println("Ok, See you next time.");
+            user.close();
+            c++;
+        }
+    }
     }
     /*
      * STEP 1: Create a new Droid object named "Codey"

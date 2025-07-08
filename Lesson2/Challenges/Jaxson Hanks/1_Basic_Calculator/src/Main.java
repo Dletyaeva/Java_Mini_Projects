@@ -67,7 +67,6 @@
  *         - Be ready to explain what happened next time!
  */
 
-
 /*
  * HINTS:
  * - The Calculator class should NOT be defined inside the Main class
@@ -84,102 +83,62 @@
  * - You must test each operation with both `int` and `double` values
  * - All methods should use the Calculator's instance variables for input
  */
+//I assume I need this here
+import java.util.Scanner;
 
-
-class Calculator{
-    int num1;
-    int num2;
-    int result;
-    double num1d;
-    double num2d;
-    double resultd;
-    Calculator(int num1, int num2){
-        this.num1 = num1;
-        this.num2 = num2;
-    }
-    Calculator(double num1d, double num2d){
-        this.num1d = num1d;
-        this.num2d = num2d;
-    }
-    //int version of all methods
-    int getNum1(){
-        return this.num1;
-    }
-    int getNum2(){
-        return this.num2;
-    }
-    void setnum1(int num1){
-        this.num1 = num1;
-    }
-    void setnum2(int num2){
-        this.num2 = num2;
-    }
-    void addition(int num1,int num2){
-        result = num1 + num2;
-        System.out.println("int" + result);
-    }
-    void subtract(int num1,int num2){
-        result = num1 - num2;
-        System.out.println("int" + result);
-    }
-    void multiply(int num1,int num2){
-        result = num1 * num2;
-        System.out.println("int" + result);
-    }
-    void division(int num1,int num2){
-        result = num1 / num2;
-        System.out.println("int" + result);
-    }
-    void modulo(int num1,int num2){
-        result = num1 % num2;
-        System.out.println("int" + result);
-    }
-    //double version of all methods
-    double getNum1d(){
-        return this.num1d;
-    }
-    double getNum2d(){
-        return this.num2d;
-    }
-    void setnum1d(double num1d){
-        this.num1d = num1d;
-    }
-    void setnum2d(double num2d){
-        this.num2d = num2d;
-    }
-    void addition(double num1d,double num2d){
-        resultd = num1d + num2d;
-        System.out.println("double" + resultd);
-    }
-    void subtract(double num1d,double num2d){
-        resultd = num1d - num2d;
-        System.out.println("double" + resultd);
-    }
-    void multiply(double num1d,double num2d){
-        resultd = num1d * num2d;
-        System.out.println("double" + resultd);
-    }
-    void division(double num1d,double num2d){
-        resultd = num1d / num2d;
-        System.out.println("double" + resultd);
-    }
-    void modulo(double num1d,double num2d){
-        resultd = num1d % num2d;
-        System.out.println("double" + resultd);
-    }
-}
 public class Main {
     public static void main(String[] args) {
-        Calculator test = new Calculator(1,2);
-        
+        Scanner scanner = new Scanner(System.in);
+        double userResponse;
+        double userResponse2;
+        int operation = 0;
+        int duration = 1;
+        int i = 0;
+        System.out.println("hello user.:");
+        // add while loop until it is terminated when asked at end
+        while (duration == 1) {
+            System.out.println("What would you like the first number to be?:");
+            userResponse = scanner.nextDouble();
+            System.out.println("What would you like your second number to be?");
+            userResponse2 = scanner.nextDouble();
+            Calculator calc = new Calculator(userResponse, userResponse2);
+            System.out.println(
+                    "What operation would you like to do on these numbers?(addition = 1, subtract = 2, multiply = 3, division = 4, modulo = 5):");
+            operation = scanner.nextInt();
+            while (i == 0) {
+                if (operation == 1) {
+                    calc.addition(calc.getNum1d(), calc.getNum2d());
+                    i = 1;
+                } else if (operation == 2) {
+                    calc.subtract(calc.getNum1d(), calc.getNum2d());
+                    i = 1;
+                } else if (operation == 3) {
+                    calc.multiply(calc.getNum1d(), calc.getNum2d());
+                    i = 1;
+                } else if (operation == 4) {
+                    calc.division(calc.getNum1d(), calc.getNum2d());
+                    i = 1;
+                } else if (operation == 5) {
+                    calc.modulo(calc.getNum1d(), calc.getNum2d());
+                    i = 1;
+                } else {
+                    System.out.println("Sorry, I don't recognize that. Please input a accepted value.");
+                    operation = scanner.nextInt();
+                }
+            }
+            System.out.println("Are you done?(1:no, 2:yes)");
+            duration = scanner.nextInt();
+        }
+        System.out.println("Goodbye.");
+        scanner.close();
     }
     /*
      * 1. Define the `main` method
      * 2. Greet the user
      * 3. Prompt the user to choose a calculator operation
-     *      - Options: add, subtract, multiply, divide, modulo
+     * - Options: add, subtract, multiply, divide, modulo
      * 4. Ask the user to enter 2 values
-     *      - You may start with integers, then test doubles
+     * - You may start with integers, then test doubles
      * 5. Create an instance of Calculator using the integer constructor
      * 6. Call the appropriate method based on the user’s choice
      * 7. Print the result
